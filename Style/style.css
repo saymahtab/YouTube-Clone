@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.nav-container {
+    position: fixed;
+    background-color: white;
+    height: 120px;
+}
+.first-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    width: 100vw;
+    top: 0;
+}
+.menu-logo-box {
+    display: flex;
+    align-items: center;
+}
+.menu-button {
+    margin: 10px 15px;
+    padding: 8px 12px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+.menu-button:hover {
+    background-color:rgb(228, 227, 227) ;
+    cursor: pointer;
+}
+.logo {
+    padding-top: 8px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+}
+.search-box input {
+    width: 35vw;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border: 1px solid rgba(176, 175, 175,0.6);
+}
+.search-box input:focus {
+    outline: none;
+    border: 1px solid rgb(0, 119, 255,0.6);
+    box-shadow: inset 0 0 1.5px black;  
+}
+.search-icon {
+    padding: 6.4px 20px;
+    font-size: 22px;
+    border: 1px solid rgb(176, 175, 175,0.4);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgba(239, 237, 237,0.4);
+}
+.search-icon:hover {
+    background-color: rgba(239, 237, 237);
+    cursor: pointer;
+}
+.mike-button {
+    font-size: 17px;
+    margin-left: 15px;
+    padding: 10px 14px;
+    background-color: rgba(239, 237, 237,0.7);
+    border-radius: 100%;
+}
+.mike-button:hover{
+    background-color:rgb(212, 211, 211) ;
+    cursor: pointer;
+}
+.notify-box {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    margin-top: 8px;
+}
+.create-button {
+    padding: 10px 6px;
+    margin-right: 13px;   
+    border-radius: 100%;
+}
+.notify {
+    padding: 8px 12px;
+    margin-right: 14px;
+    border-radius: 100%;
+}
+.create-button:hover, .notify:hover {
+    background-color:rgb(229, 227, 227);
+    cursor: pointer;
+}
+.profile-pic {
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* --- side bar --  */
+
+aside {
+    display: inline-block;
+}
+#side-bar {
+    width: 70px;
+    height: 100vh;
+    display: inline-block;
+    position: fixed;
+    z-index: 1;
+    top: 56px;
+}
+#side-bar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#side-bar ul li {
+    width: 90%; 
+    padding: 18px;
+    cursor: pointer;
+}
+#side-bar ul li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#side-bar li:hover {
+    background-color: rgb(229, 229, 229);
+    border-radius: 8px;
+}
+.side-icon {
+    font-size: 17px;
+    padding-bottom: 5px;
+}
+.icon-name {
+    font-size: 10px;
+}
+
+/* ---- nav bar --- */
+
+.nav-bar ul {
+    display: flex;
+    align-items: center;
+    scroll-behavior: smooth;
+    height: 5vh;
+    width: 91.5vw;
+    position: absolute;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    top: 70px;
+    margin-left: 85px;
+    list-style: none;
+}
+.nav-bar ul::-webkit-scrollbar {
+    display: none;
+}
+.nav-bar ul li {
+    padding: 0 10px;
+    white-space: nowrap;
+}
+.nav-bar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 450;
+    display: inline-block;
+    padding: 8px 10px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.nav-bar li a:hover {
+    background-color: rgb(219, 216, 216);
+}
+
+/*--- main content --- */
+
+.main-container {
+    margin: 100px 75px;
+    width: 93vw;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.content {
+    margin: 20px auto;
+}
+.vedio {
+    height: 190px;
+    width: 330px;
+    background-color: rgb(212, 211, 211);
+    border-radius: 20px;
+}
+.vedio-caption {
+    display: flex;
+    align-items: center;
+}
+.shorts-section {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+}
+.shorts-content {
+    height: 400px;
+    width: 209.8px;
+    background-color: rgb(212, 211, 211);
+    border-radius: 20px;
+    margin: 0 15px;
+}
+
+
+/* menu-box  */
+
+.menu-box-container {
+    position: fixed;
+    background-color: white;
+    width: 245px;
+    top: 60px;
+    left: -250px;
+    transition: 0.1s;
+    z-index: 1;
+}
+.menu-box {
+    height: 100vh;
+    overflow-y: scroll;
+}
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+}
+.box:hover {
+    background-color: rgb(212, 211, 211);
+}
+.menu-box-name {
+    padding-left: 40px;
+    font-size: 14px;
+}
+
+
+/* extra properties  */
+
+
