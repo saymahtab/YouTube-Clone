@@ -224,7 +224,7 @@ aside {
     align-items: center;
     margin: 20px auto;
     overflow: scroll;
-    width: 100vw;
+    width: 90vw;
     max-width: 90rem;
 }
 .shorts-section::-webkit-scrollbar {
@@ -270,7 +270,7 @@ aside {
     left: -250px;
     transition: 0.1s;
     z-index: 1;
-    height: 100vh;
+    height: 100rem;
 }
 .menu-box {
     height: 100vh;
@@ -316,12 +316,64 @@ hr {
     padding-left: 40px;
     font-size: 14px;
 }
+@media only screen and (max-width: 1100px){
+    .vedio img{
+        height: 250px;
+    }
+    .main-container {
+        margin-left: 75px;
+    }
+     .search-box {
+        margin-right: 150px;
+     }
+     .vedio-caption{
+        margin-top: 70px;
+        font-size: 1.3rem;
+    }
+    .vedio-title {
+        width: 22rem;
+        margin-right: 30px;
+    }
+    .channal-logo {
+        margin-right: 20px;
+    }
+}
+@media only screen and (max-width: 970px){
+    .vedio img{
+        height: 230px;
+    }
+    .main-container {
+        margin-left: 90px;
+    }
+    /* .search-box {
+        margin-right: 200px;
+    } */
+     .search-box {
+        margin-right: 150px;
+     }
+     .vedio-caption{
+        margin-top: 70px;
+        font-size: 1.3rem;
+    }
+    .vedio-title {
+        width: 22rem;
+        margin-right: 30px;
+    }
+    .channal-logo {
+        margin-right: 20px;
+    }
+}
+
 @media only screen and (max-width: 600px){
 	#side-bar {
         display: none;
     }
-    .menu-button {
+    .menu-button{
         display: none;
+    }
+    .menu-button {
+        margin-right: 0;
+        margin-left: 1px;
     }
     .nav-bar ul {
         margin-left: 5px;
@@ -333,9 +385,19 @@ hr {
     .main-container {
         margin: 0 auto;
         margin-top: 6.7rem;
+        margin-left: 10px;
+    }
+    .vedio img{
+        height: 220px;
+        margin-left: 0;
+    }
+    .vedio-caption{
+        margin-top: 70px;
+        font-size: 1.1rem;
+        margin-top: 40px;
     }
     .content {
-        margin: auto;
+        margin: auto; 
     }
     .logo {
         margin-left: 10px;
@@ -358,6 +420,15 @@ hr {
     }
     .channal-name {
         margin-top: 4px;
+    }
+    .vedio-title {
+        width: 16rem;
+        margin-right: 65px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .main-container {
+        margin-left: 0;
     }
 }
 
