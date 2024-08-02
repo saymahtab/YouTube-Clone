@@ -9,6 +9,7 @@
     position: fixed;
     background-color: white;
     height: 120px;
+    width: 100%;
 }
 .first-nav {
     display: flex;
@@ -202,21 +203,60 @@ aside {
     background-color: rgb(212, 211, 211);
     border-radius: 20px;
 }
+.vedio img {
+    border-radius: 10px;
+}
+.channal-logo img {
+    border-radius: 50px;
+}
 .vedio-caption {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.vedio-title {
+    width: 16rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
 }
 .shorts-section {
     display: flex;
     align-items: center;
     margin: 20px auto;
+    overflow: scroll;
+    width: 100vw;
+    max-width: 90rem;
+}
+.shorts-section::-webkit-scrollbar {
+    display: none;
 }
 .shorts-content {
+    flex: 1 1 auto;
+    min-width: 200px;
     height: 400px;
     width: 209.8px;
     background-color: rgb(212, 211, 211);
     border-radius: 20px;
     margin: 0 15px;
+}
+.more {
+    color: rgb(114, 113, 113);
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0;
+}
+
+.channal-name {
+    margin-top: 7px;
+    margin-bottom: 1px;
+}
+.sh {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+}
+.shorts-img {
+    margin-right: 12px;
 }
 
 
@@ -230,25 +270,74 @@ aside {
     left: -250px;
     transition: 0.1s;
     z-index: 1;
+    height: 100vh;
 }
 .menu-box {
     height: 100vh;
     overflow-y: scroll;
+    padding: 15px;
+    padding-top: 0;
 }
+.menu-box {
+    overflow-y: auto;
+}
+hr {
+    opacity: 0.5;
+}
+
+.menu-box::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(165, 165, 165);
+    scroll-behavior: smooth;
+}
+
+.menu-box::-webkit-scrollbar-thumb {
+    background-color: rgb(153, 153, 153);
+}
+.menu-box::-webkit-scrollbar-track {
+    background-color: white;
+}
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+
 .box {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 10px;
+    border-radius: 10px;
 }
 .box:hover {
-    background-color: rgb(212, 211, 211);
+    background-color: rgb(238, 238, 238);
 }
 .menu-box-name {
     padding-left: 40px;
     font-size: 14px;
 }
-
+@media only screen and (max-width: 425px){
+	#side-bar {
+        display: none;
+    }
+    .menu-button {
+        display: none;
+    }
+    .nav-bar ul {
+        margin-left: 5px;
+        width: 100%;
+    }
+    .content {
+        margin: 10px;
+    }
+    .main-container {
+        margin: 0 auto;
+        margin-top: 6.7rem;
+    }
+    .content {
+        margin: auto;
+    }
+}
 
 /* extra properties  */
 
