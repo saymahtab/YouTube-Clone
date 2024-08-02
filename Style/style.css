@@ -188,7 +188,7 @@ aside {
 /*--- main content --- */
 
 .main-container {
-    margin: 100px 75px;
+    margin: 10px 75px;
     width: 93vw;
     display: flex;
     align-items: center;
@@ -336,6 +336,28 @@ hr {
     }
     .content {
         margin: auto;
+    }
+    .logo {
+        margin-left: 10px;
+        margin-right: 100px;
+    }
+    .notify-box {
+        margin-right: 0;
+    }
+    .profile-pic {
+        margin-right: 5px;
+    }
+    .create-button {
+        margin-right: 2px;
+    }
+    .search-box {
+        display: none;
+    }
+    .content {
+        padding-bottom: 20px;
+    }
+    .channal-name {
+        margin-top: 4px;
     }
 }
 
